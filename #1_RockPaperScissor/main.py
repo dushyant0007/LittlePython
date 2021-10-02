@@ -57,22 +57,18 @@ __________$$$$$$$
 ___________$$$$$
 _______$$$$$$$$$$$$$'''
 
+print(" You \n " + lList[userInput])
+print("\n----xxxx----xxxxx-----\n")
+print(" Computer \n " + lList[computerInput] + " \n ")
+
 if userInput > computerInput:
-    print(" You \n " + lList[userInput])
-    print("\n----xxxx----xxxxx-----\n")
-    print(" Computer \n " + lList[computerInput] + " \n ")
     print(" You Win ")
     print(winner)
 
 elif userInput < computerInput:
-    print(" You \n " + lList[userInput])
-    print("\n----xxxx----xxxxx-----\n")
-    print(" Computer \n " + lList[computerInput] + " \n ")
-    print(" Computer Win \n Try again better luck next time ")
+    print(" Computer Win \n")
     print(winner)
+    print("\n Try again better luck next time ")
 
 else:
-    print(" You \n " + lList[userInput])
-    print("\n----xxxx----xxxxx-----\n")
-    print(" Computer \n " + lList[computerInput] + " \n ")
     print(" Match draw ")
