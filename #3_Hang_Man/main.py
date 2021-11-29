@@ -40,3 +40,4 @@ while not endOfGame:
         print("You Win")
 
     print(logo.stages[lives])
+    #///
