@@ -32,3 +32,5 @@ response = requests.get(url="https://api.sunrise-sunset.org/json", params=parame
 # response = requests.get(url=f"https://api.sunrise-sunset.org/json?lat={my_lat}&lng={my_lng}")
 response.raise_for_status()
 print(response.json())
+
+#//
