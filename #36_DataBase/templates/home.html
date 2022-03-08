@@ -1,0 +1,8 @@
+{% extends  "temp.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<div style="text-align: center;margin: 20% auto;">
+<h1>Welcome</h1>
+<a class="btn btn-primary" href="{{ url_for('login') }}">Login</a>
+</div>
+{% endblock %}
