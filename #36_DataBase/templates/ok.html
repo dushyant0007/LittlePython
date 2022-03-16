@@ -1,0 +1,11 @@
+{% extends "temp.html" %}
+{% block title %}OK{% endblock %}
+{% block content %}
+<div style="text-align: center;margin: 20% auto;">
+  <h3>{{session["d_data"]["email"]}} <p>Your Login</p> </h3>
+  
+  <h3>successfully completed </h3>
+  
+  <a class="btn btn-primary" href="{{url_for('home')}}">HOME</a>
+</div>
+{% endblock %}
