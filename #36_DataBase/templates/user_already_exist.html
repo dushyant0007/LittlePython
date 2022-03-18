@@ -1,0 +1,9 @@
+{% extends  "temp.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<div style="text-align: center;margin: 20% auto;">
+<h1>username {{session["d_data"]["email"]}} already exist</h1>
+<p>Try using different username</p>
+<a class="btn btn-primary" href="{{ url_for('home') }}">Home</a>
+</div>
+{% endblock %}
