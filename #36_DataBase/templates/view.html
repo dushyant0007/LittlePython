@@ -1,0 +1,21 @@
+{% extends "temp.html" %}
+{% block title %}OK{% endblock %}
+{% block content %}
+<div style="text-align: center;margin: 200px 300px;">
+  <table class="table">
+    <thead>
+      <td>Id</td>
+      <td >Username</td>
+      <td>Password</td>
+    </thead>
+    {% for data in all_data %}
+    <tr>
+      <td>{{data._id}}</td>
+      <td>{{data.name}}</td>
+      <td>{{data.password}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  <a class="btn btn-primary" href="{{url_for('home')}}">HOME</a>
+</div>
+{% endblock %}
